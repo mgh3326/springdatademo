@@ -7,13 +7,24 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Comment {
-  @Id @GeneratedValue
+  @Id
+  @GeneratedValue
   private Long id;
 
   private String comment;
 
   @ManyToOne
   private Post post;
+
+  private int likeCount;
+
+  public int getLikeCount() {
+    return likeCount;
+  }
+
+  public void setLikeCount(int likeCount) {
+    this.likeCount = likeCount;
+  }
 
   public Long getId() {
     return id;

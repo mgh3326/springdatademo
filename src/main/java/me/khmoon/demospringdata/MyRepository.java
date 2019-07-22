@@ -1,8 +1,8 @@
 package me.khmoon.demospringdata;
 
-import jdk.internal.jline.internal.Nullable;
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.Repository;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.Id;
 import java.io.Serializable;
